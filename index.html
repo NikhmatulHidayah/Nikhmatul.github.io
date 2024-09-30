@@ -4,78 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Nikhmatul</title>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            background-color: #000; /* Warna navbar hitam */
+            padding: 5px;
+            text-align: left;
+            width: 100%; /* Full width untuk memenuhi layar */
+            position: fixed; /* Posisi tetap di bagian atas */
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Pastikan navbar tetap di atas konten lain */
+            box-sizing: border-box; /* Mencegah padding menambah ukuran width */
+        }
+
+        /* Styling untuk link pada navbar */
+        .navbar a {
+            color: #fff; /* Warna putih */
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        /* Hover effect */
+        .navbar a:hover {
+            background-color: #fff; /* Warna latar belakang hover putih */
+            color: #000; /* Warna teks berubah jadi hitam */
+        }
+
+        /* Body styling */
+        body {
+            padding-top: 50px; /* Beri ruang untuk navbar fixed */
+            padding-left: 50px;
+            padding-right: 90px;
+            padding-bottom: 30px;
+            background-color: aliceblue;
+            font-family: system-ui, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        /* CV container styling */
+        .cv-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cv-details {
+            flex: 70%;
+        }
+
+        .cv-details img {
+            flex: 30%;
+            max-width: 200px;
+            margin-left: 50px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-        
-        <h1>Nikhmatul Hidayah</h1>
-        <h2></h2>
-        <IMG src="Nikhmatul Hidayah.jpg" alt="Foto Pribadi" width="200" height="200">
-        
-            <h1>Data Pribadi</h1>
-<table style="width: 100%; border-collapse: collapse;">
-    <tr>
-        <td style="padding: 10px; width: 150px;">Nama</td>
-        <td style="padding: 10px;">Nikhmatul Hidayah</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px;">Tempat, Tanggal Lahir</td>
-        <td style="padding: 10px;">Banyumas, 30 September 2004</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px;">Jenis Kelamin</td>
-        <td style="padding: 10px;">Perempuan</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px;">Agama</td>
-        <td style="padding: 10px;">Islam</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px;">Alamat</td>
-        <td style="padding: 10px;">Bandung</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px;">Nomor Telepon</td>
-        <td style="padding: 10px;">081215600478</td>
-    </tr>
-    <tr>
-        <td style="padding: 10px;">E-mail</td>
-        <td style="padding: 10px;">hinikhmatulhidayah@gmail.com</td>
-    </tr>
-</table>
 
 
-        <section>
-            <h1>Riwayat Pendidikan</h1>
-<table border="4" width="50%" cellpadding="10" cellspacing="0">
-    <tfoot>
-      <tr>
-        <th>Pendidikan</th>
-        <th>Tahun</th>
-      </tr>
-      <tr>
-        <td>SMPN 2 Jeruklegu</td>
-        <td>Juni 2016 - Juni 2019</td>
-      </tr>
-      <tr>
-        <td>SMK Telkom Purwokerto</td>
-        <td>Juni 2019 - Juni 2022</td>
-      </tr>
-      <tr>
-        <td>Sistem Informasi, Telkom University</td>
-        <td>Juni 2022 - Sekarang</td>
-      </tr>
-    </tfoot>
-  </table>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html">CV</a>
+      <a href="portofolio.html">Portofolio</a>
+  </div>
 
-  <body>
-    <p>Saya adalah seorang individu yang disiplin, bertanggung jawab, dan memiliki semangat belajar yang tinggi. 
+    <!-- CV Section -->
+    <h1>Nikhmatul Hidayah</h1>
+    <div class="cv-container">
+        <div class="cv-details">
+            <h2>Data Pribadi</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 10px; width: 150px;">Nama</td>
+                    <td style="padding: 10px;">Nikhmatul Hidayah</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Tempat, Tanggal Lahir</td>
+                    <td style="padding: 10px;">Banyumas, 30 September 2004</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Jenis Kelamin</td>
+                    <td style="padding: 10px;">Perempuan</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Agama</td>
+                    <td style="padding: 10px;">Islam</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Alamat</td>
+                    <td style="padding: 10px;">Bandung</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Nomor Telepon</td>
+                    <td style="padding: 10px;">081215600478</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">E-mail</td>
+                    <td style="padding: 10px;">hinikhmatulhidayah@gmail.com</td>
+                </tr>
+            </table>
+
+            <h2>Riwayat Pendidikan</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Pendidikan</th>
+                        <th>Tahun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SMPN 2 Jeruklegi</td>
+                        <td>Juni 2016 - Juni 2019</td>
+                    </tr>
+                    <tr>
+                        <td>SMK Telkom Purwokerto</td>
+                        <td>Juni 2019 - Juni 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Sistem Informasi, Telkom University</td>
+                        <td>Juni 2022 - Sekarang</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Foto Pribadi -->
+        <img src="Nikhmatul Hidayah.jpg" alt="Foto Pribadi" width="200" height="200">
+    </div>
+
+    <section>
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang individu yang disiplin, bertanggung jawab, dan memiliki semangat belajar yang tinggi. 
         Dengan latar belakang pendidikan di bidang IT, saya telah mengembangkan keterampilan dalam menulis dan mendesain. 
-        Saya memiliki kemampuan komunikasi yang baik, mampu bekerja dalam tim maupun secara mandiri. 
-        Serta berkomitmen untuk selalu memberikan hasil terbaik dalam setiap tugas yang saya emban</p>
-  </body>
-            
-     
+        Saya memiliki kemampuan komunikasi yang baik, mampu bekerja dalam tim maupun secara mandiri, 
+        serta berkomitmen untuk selalu memberikan hasil terbaik dalam setiap tugas yang saya emban.</p>
+    </section>
 
-    
 </body>
 </html>
