@@ -3,58 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portofolio Nikhmatul Hidayah</title>
+    <style>
+        /* Navbar styling */
+        .navbar {
+            background-color: #000; /* Warna navbar hitam */
+            padding: 5px;
+            text-align: left;
+            width: 100%; /* Full width untuk memenuhi layar */
+            position: fixed; /* Posisi tetap di bagian atas */
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Pastikan navbar tetap di atas konten lain */
+            box-sizing: border-box; /* Mencegah padding menambah ukuran width */
+        }
+
+        /* Styling untuk link pada navbar */
+        .navbar a {
+            color: #fff; /* Warna putih */
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        /* Hover effect */
+        .navbar a:hover {
+            background-color: #fff; /* Warna latar belakang hover putih */
+            color: #000; /* Warna teks berubah jadi hitam */
+        }
+
+        /* Styling umum */
+        body{
+            padding-top: 60px; /* Tambahkan padding-top untuk memberikan ruang bagi navbar fixed */
+            padding-left: 50px;
+            padding-right: 90px;
+            padding-bottom: 30px;
+            background-color: aliceblue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .title{
+            margin-bottom:0;
+        }
+        .title h2{
+            font-weight: 500;
+        }
+        .title h3{
+            font-weight: 400;
+            margin: 0px;
+        }
+        .container{
+            margin-top:40px;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        .duration sub{
+            margin-top: 1px;
+        }
+        .image img{
+            width: 290px;
+            height: 250px;
+            margin-left:10px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        hr {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            background-color: darkgray;
+            border-color:none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-<style>
-    body{
-        padding-top: 30px;
-        padding-left: 50px;
-        padding-right: 90px;
-        padding-bottom: 30px;
-        background-color:aliceblue;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    .title{
-        margin-bottom:0;
-    }
-    .title h2{
-        font-weight: 500;
-    }
-    .title h3{
-        font-weight: 400;
-        margin: 0px;
-    }
-    .container{
-        margin-top:40px;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
-        padding-top: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-    }
-    .duration sub{
-        margin-top: 1px;
-    }
-    .image img{
-        width: 290px;
-        height: 250px;
-        margin-left:10px;
-        border-radius: 5px;
-        object-fit: cover;
-    }
-    hr {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        background-color: darkgray;
-        border-color:none;
-        border-radius: 5px;
-    }
-</style>
 <body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">CV</a>
+        <a href="portofolio.html">Portofolio</a>
+    </div>
+
+    <!-- Portofolio Content -->
     <div class="title">
         <h2>Portfolio and CV <a href="https://nikhmatulhidayah.github.io" target="_blank">Nikhmatul Hidayah</a></h2>
     </div>
@@ -94,7 +131,7 @@
         <hr>
 
         <div class="title">
-            <h3>Liason officer at Tel-u Career</h3>
+            <h3>Liaison Officer at Tel-u Career</h3>
             <sub>March 2024</sub>
         </div>
         <div class="summary">
